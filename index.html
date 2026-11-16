@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de usuarios</h1>
+
+        <p>
+            Este ejemplo registra usuarios, evita nombres duplicados,
+            conserva los datos y permite eliminar registros.
+        </p>
+
+        <div class="formulario">
+            <h2>Registrar nuevo usuario</h2>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ingresa el nombre"
+                    required
+                >
+
+                <label for="clave">Clave:</label>
+                <input
+                    type="password"
+                    id="clave"
+                    placeholder="Ingresa una clave de prueba"
+                    required
+                >
+
+                <button type="submit">Registrar usuario</button>
+
+            </form>
+
+            <p id="mensaje"></p>
+        </div>
+
+        <div class="tabla">
+
+            <h2>Usuarios registrados</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Clave</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaUsuarios"></tbody>
+            </table>
+
+            <p id="contador">Total de usuarios: 0</p>
+
+            <button id="eliminarTodos" class="btn-limpiar">
+                Eliminar todos los usuarios
+            </button>
+
+        </div>
+
+        <p class="nota">
+            Los datos se guardan en localStorage y permanecen
+            aunque recargues la página.
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

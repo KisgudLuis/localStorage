@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 850px;
+    margin: auto;
+}
+
+h1 {
+    color: #2457a7;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.formulario,
+.tabla {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2457a7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #19417f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #eef3fb;
+}
+
+.btn-eliminar {
+    background-color: #d94343;
+    margin: 0;
+}
+
+.btn-eliminar:hover {
+    background-color: #ad2929;
+}
+
+.btn-limpiar {
+    background-color: #555;
+}
+
+.btn-limpiar:hover {
+    background-color: #333;
+}
+
+#contador {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#mensaje {
+    font-weight: bold;
+}
+
+.nota {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+        font-size: 13px;
+    }
+}
